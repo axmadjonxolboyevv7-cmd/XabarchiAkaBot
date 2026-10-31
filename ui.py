@@ -9,14 +9,14 @@ EMOJI = {
  "partner": ("🤝", ""), "admin": ("⚙️", ""), "check": ("✅", ""), "back": ("⬅️", ""),
  "a_stats": ("📊", ""), "a_users": ("👥", ""), "a_trial": ("⏳", ""), "a_tariffs": ("💰", ""),
  "a_tez": ("⚡", ""), "a_click": ("💳", ""), "a_channels": ("📢", ""), "a_edit": ("✏️", ""),
- "a_design": ("🎨", ""), "a_bcast": ("📣", ""), "click": ("💳", ""), "tez": ("⚡", ""),
+ "a_design": ("🎨", ""), "a_bcast": ("📣", ""), "click": ("💳", ""), "tez": ("⚡", ""), "a_manual": ("🏦", ""), "manual": ("🏦", ""),
 }
 DEFAULT_STYLE = {"connect": "success", "history": "primary", "profile": "primary", "pay": "success", "lang": "primary",
- "partner": "primary", "admin": "danger", "check": "success", "back": "danger", "click": "primary", "tez": "success"}
+ "partner": "primary", "admin": "danger", "check": "success", "back": "danger", "click": "primary", "tez": "success", "manual": "primary"}
 ORDER = ["primary", "success", "danger"]  # ko'k -> yashil -> qizil
 ADMIN_UZ = {"a_stats": "Statistika", "a_users": "Foydalanuvchilar", "a_trial": "Bepul muddat", "a_tariffs": "Tariflar va narxlar",
  "a_tez": "Avto to'lov ulash", "a_click": "Click sozlash", "a_channels": "Majburiy kanallar",
- "a_edit": "Tugmalarni tahrirlash", "a_design": "Dizayn", "a_bcast": "Xabar yuborish", "click": "Click", "tez": "Karta (avto)"}
+ "a_edit": "Tugmalarni tahrirlash", "a_design": "Dizayn", "a_bcast": "Xabar yuborish", "click": "Click", "tez": "Karta (avto)", "a_manual": "Qo'lda to'lov", "manual": "Karta (qo'lda)"}
 
 T = {
  "uz": {"choose_lang": "🌐 Tilni tanlang / Выберите язык / Choose language",
@@ -87,4 +87,4 @@ def rbtn(ui, key, lang="uz"):
 def rkb(rows): return ReplyKeyboardMarkup(keyboard=rows, resize_keyboard=True, is_persistent=True)
 
 USER_KEYS = ["connect", "history", "profile", "pay", "lang", "partner", "admin"]
-ADMIN_KEYS = ["a_stats", "a_users", "a_trial", "a_tariffs", "a_tez", "a_click", "a_channels", "a_edit", "a_design", "a_bcast", "back"]
+ADMIN_KEYS = ["a_stats", "a_users", "a_trial", "a_tariffs", "a_tez", "a_click", "a_manual", "a_channels", "a_edit", "a_design", "a_bcast", "back"]
